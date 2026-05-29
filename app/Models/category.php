@@ -12,6 +12,6 @@ Class Category extends Model{
     ];
 //a partir de uma categoria posso acessar um produto
     public function products(){
-        $this->hasmany(Product::class,"category_id", "id");
+        return $this->hasmany(Product::class,"category_id", "id");
     }
 }
